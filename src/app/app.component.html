@@ -2,12 +2,15 @@
     <div class="row form-row">
       <div class="col-12">
         <div class="form-search text-center">
-            <label for="firstName">
-                FirstName:<input type="text" [(ngModel)]="firstName">
-              </label>
-              <label for="lastName">
-                LastName: <input type="text" [(ngModel)]="lastName">
-              </label>
+          <label for="firstName">
+            FirstName:<input type="text" [(ngModel)]="firstName">
+          </label>
+          <label for="lastName">
+            LastName: <input type="text" [(ngModel)]="lastName">
+          </label>
+          <br>
+          <label for="customRange1">Salary range</label>
+          <input type="range" class="custom-range" id="customRange1" [(ngModel)]="salaryRange">
         </div>
       </div>
     </div>
@@ -24,10 +27,14 @@
           <th>
             Lastname
           </th>
-          <tr *ngFor="let emp of empData | filter: firstName : lastName">
+          <th>
+            Salary
+          </th>
+          <tr *ngFor="let emp of empData | filter: firstName : lastName : salaryRange">
             <td>{{emp.id}}</td>
             <td>{{emp.firstName}}</td>
             <td>{{emp.lastName}}</td>
+            <td>{{emp.salary}}</td>
           </tr>
         </table>
       </div>

@@ -7,6 +7,7 @@ class Employee {
   id: number;
   firstName: string;
   lastName: string;
+  salary: number;
 }
 
 
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit {
 
   firstName = '';
   lastName = '';
+  salaryRange = 0;
 
   empData: Employee[] = [];
   constructor(private dataService: DataService) { }
