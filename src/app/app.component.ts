@@ -3,7 +3,7 @@ import { DataService } from './services/dataService';
 import { FormGroup, FormControl } from '@angular/forms';
 
 
-class Employee {
+interface Employee {
   id: number;
   firstName: string;
   lastName: string;

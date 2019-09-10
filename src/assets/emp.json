@@ -20,9 +20,15 @@
           "salary":10000
         },
         {
-          "id": "3",
+          "id": "4",
           "firstName": "James",
           "lastName": "Kane",
+          "salary":8000
+        },
+        {
+          "id": "5",
+          "firstName": "Andrew",
+          "lastName": "Panki",
           "salary":8000
         }
       ]
